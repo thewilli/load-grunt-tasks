@@ -33,7 +33,7 @@ module.exports = function (grunt, opts) {
 			var root = path.dirname(pkg);
 			pkgName = path.join(root, 'tasks');
 		}
-
-		grunt.loadTasks(pkgName);
+		console.log("loading grunt task: %s", pkgName);
+		grunt.loadNpmTasks(pkgName);
 	});
 };
